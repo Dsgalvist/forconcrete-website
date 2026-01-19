@@ -1,0 +1,606 @@
+/****************** page defaults ******************/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.fixed-width {
+    width: 600px;
+    margin: 0 auto; /* centers content on the screen */
+}
+
+.hidden {
+    display: none; /* hides elements that are needed for DOM */
+}
+
+.flex {
+    display: flex; 
+}
+
+/****************** typography ******************/
+
+h1, h2, a {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/*** INSERT YOUR WORK BELOW: ***/
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header a {
+    color: white;
+}
+
+p, h2 {
+    margin-bottom: 15px;
+}
+
+/****************** site-wide styling ******************/
+/*** INSERT YOUR WORK BELOW: ***/
+header, footer {
+    background-color: #111827;
+    box-shadow: 0 2px 8px rgba (0,0,0,0.3);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111827;
+    padding: 10px;
+    margin-bottom: 0;
+
+    gap: 400px; /* si usas esto en desktop */
+}
+
+header img {
+    width: 130px;
+    height: 130px;
+}
+
+nav a {
+    margin-right: 30px;
+    font-size: 25px;
+  
+}
+
+main{
+  margin-top: 150px;
+}
+/* ===== FOOTER REDISEÑADO PREMIUM ===== */
+.fc-footer {
+  background: #111827;
+  padding: 60px 10% 30px;
+  color: #e5e7eb;
+}
+
+.fc-footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.fc-footer-col {
+  flex: 1;
+  min-width: 260px;
+}
+
+.fc-footer-logo {
+  width: 110px;
+  margin-bottom: 12px;
+}
+
+.fc-footer-col h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.fc-footer-contact {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Social icons */
+
+.fc-footer-col{
+  display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centra título + iconos */
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 18px;
+  justify-items: center;
+  margin-top: 25px;
+}
+
+.footer-social a i {
+  font-size: 36px;  
+  color: white;
+  transition: 0.25s ease;
+}
+
+.footer-social a i:hover {
+  transform: scale(1.25);
+  color: #e63946; /* rojo cemento como tu marca */
+}
+
+/* Gallery */
+.fc-footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 75px);
+  gap: 10px;
+}
+
+.fc-footer-gallery img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.fc-footer-gallery img:hover {
+  transform: scale(1.08);
+}
+
+/* Bottom text */
+.fc-footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #111827;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* === BOTÓN SVG ELEGANTE === */
+.svg-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 55px;
+    height: 55px;
+    background: #0a2a52;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+    transition: all .3s ease;
+    z-index: 9999;
+}
+
+.svg-btn:hover {
+    transform: translateY(-5px);
+    background: #133b74;
+}
+/************************************************* ===== ABOUT HERO SECTION ===== *****************************************/
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/aboutpage.jpg'); /* <-- aquí tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.about-hero-title {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* ========== INFO SECTION WITH TABS ========== */
+/* SECTION */
+.why-section {
+    padding: 100px 10%;
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* GRID */
+.why-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* LEFT SIDE */
+.why-left {
+    flex: 1;                     /* toma la mitad izquierda */
+    background-color: #111827;   /* tu fondo */
+    padding: 50px 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* centra verticalmente */
+}
+.why-logo {
+    width: 260px;
+    margin-bottom: 40px;
+}
+
+.why-features {
+    margin-top: 20px;
+    border-left: 4px solid white;
+    padding-left: 20px;
+}
+
+.wf-item {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wf-icon {
+    font-size: 22px;
+}
+
+
+/* RIGHT SIDE */
+.why-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: #0a2a52;
+    margin-bottom: 25px;
+}
+
+
+/* TABS */
+.why-tabs {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #0a2a52;
+    position: relative;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #0a2a52;
+}
+
+
+/* CONTENT BOX */
+.why-content {
+    background: #f7f9fc;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+.why-content p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* LIST */
+.why-list {
+    list-style: none;
+    padding: 0;
+}
+
+.why-list li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 10px;
+    color: #0a2a52;
+}
+
+.why-list li span {
+    color: #caa05a;
+    font-weight: 900;
+}
+
+
+/* TAB CONTENTS */
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ===== COMMITMENTS SECTION ===== */
+
+.fc-commitments {
+    background: #e5e5e5; /* gris elegante */
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.fc-commit-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #0a2a52;
+    letter-spacing: 2px;
+}
+
+.fc-commit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.fc-commit-item {
+    text-align: center;
+}
+
+.fc-commit-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fc-commit-item h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .fc-commit-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .fc-commit-item h3 {
+        font-size: 20px;
+    }
+}
+/* --- MANAGEMENT TEAM NEW DESIGN --- */
+.team-section {
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.team-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    max-width: 1300px;
+}
+
+.team-photo img {
+    width: 350px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #0a1c2e;
+    margin-bottom: 10px;
+}
+
+.team-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #102f52;
+}
+
+.team-role {
+    font-size: 18px;
+    font-style: italic;
+    color: #4b4b4b;
+    margin-bottom: 25px;
+}
+
+.team-desc {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.team-highlights li {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #102f52;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media(max-width: 950px) {
+    .team-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-photo img {
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
+/* ====== TESTIMONIALS – Google Review Style ====== */
+/* TESTIMONIALS WITH BACKGROUND IMAGE */
+.fc-testimonials-hero {
+  position: relative;
+  padding: 100px 10%;
+  background-image: url('../images/clients.jpg'); /* Cambia por tu fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.fc-testimonials-hero .fc-title {
+  color: #ffffff !important;
+}
+
+.fc-testimonials-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); 
+  z-index: 1;
+}
+
+.fc-testimonials-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.fc-testimonials-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* GLASS EFFECT CARD */
+.fc-testimonial-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 32px 28px;
+  color: white;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Avatar */
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #0a2a52;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.fc-testimonial-card h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fc-testimonial-card span {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.fc-testimonial-card p {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .fc-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .fc-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,404 @@
+/****************** page defaults ******************/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.fixed-width {
+    width: 600px;
+    margin: 0 auto; /* centers content on the screen */
+}
+
+.hidden {
+    display: none; /* hides elements that are needed for DOM */
+}
+
+.flex {
+    display: flex; 
+}
+
+/****************** typography ******************/
+
+h1, h2, a {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/*** INSERT YOUR WORK BELOW: ***/
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header a {
+    color: white;
+}
+
+p, h2 {
+    margin-bottom: 15px;
+}
+
+/****************** site-wide styling ******************/
+/*** INSERT YOUR WORK BELOW: ***/
+
+header, footer {
+    background-color: #111827;
+    box-shadow: 0 2px 8px rgba (0,0,0,0.3);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111827;
+    padding: 10px;
+    margin-bottom: 0;
+
+    gap: 400px; /* si usas esto en desktop */
+}
+
+header img {
+    width: 130px;
+    height: 130px;
+}
+
+nav a {
+    margin-right: 30px;
+    font-size: 25px;
+  
+}
+
+main{
+  margin-top: 150px;
+}
+/* ===== FOOTER REDISEÑADO PREMIUM ===== */
+.fc-footer {
+  background: #111827;
+  padding: 60px 10% 30px;
+  color: #e5e7eb;
+}
+
+.fc-footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.fc-footer-col {
+  flex: 1;
+  min-width: 260px;
+}
+
+.fc-footer-logo {
+  width: 110px;
+  margin-bottom: 12px;
+}
+
+.fc-footer-col h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.fc-footer-contact {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Social icons */
+
+.fc-footer-col{
+  display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centra título + iconos */
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 18px;
+  justify-items: center;
+  margin-top: 25px;
+}
+
+.footer-social a i {
+  font-size: 36px;  
+  color: white;
+  transition: 0.25s ease;
+}
+
+.footer-social a i:hover {
+  transform: scale(1.25);
+  color: #e63946; /* rojo cemento como tu marca */
+}
+
+/* Gallery */
+.fc-footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 75px);
+  gap: 10px;
+}
+
+.fc-footer-gallery img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.fc-footer-gallery img:hover {
+  transform: scale(1.08);
+}
+
+/* Bottom text */
+.fc-footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #111827;
+  font-size: 14px;
+  color: #9ca3af;
+}
+/* === BOTÓN SVG ELEGANTE === */
+.svg-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 55px;
+    height: 55px;
+    background: #0a2a52;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+    transition: all .3s ease;
+    z-index: 9999;
+}
+
+.svg-btn:hover {
+    transform: translateY(-5px);
+    background: #133b74;
+}
+/************************************************* ===== CONTACT SECTION ===== *****************************************/
+.contact-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/contactus.jpg'); /* <-- aquí tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.contact-hero-title {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+/***************************************************************************************/
+/* CONTACT INFO SECTION */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.ci-box {
+    width: 400px;               /* MÁS ANCHO */
+    height: 250px;              /* MÁS ALTO */
+    border: 3px solid #111827;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s ease;
+    background: white;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.ci-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+.ci-icon {
+    font-size: 60px;            /* ÍCONO MÁS GRANDE */
+    color: #111827;
+}
+
+.ci-text {
+    font-size: 20px;            /* TEXTO MÁS GRANDE */
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .ci-box {
+        width: 85%;
+    }
+}
+/*****************************************************************************/
+/* CONTAINER */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 10%;
+    align-items: start;
+}
+
+/* FORM BOX */
+.contact-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+    box-sizing: border-box;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0a2a52;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-top: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.fc-submit {
+    margin-top: 20px;
+    background: #0a2a52;
+    color: white;
+    padding: 12px 30px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.fc-submit:hover {
+    background: #08305f;
+}
+
+/* MAP */
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+}
+
+/* ==== APPLE STYLE SUCCESS MESSAGE ==== */
+#success-msg {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff;
+  padding: 18px 30px;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  z-index: 99999;
+}
+
+.success-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.success-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}

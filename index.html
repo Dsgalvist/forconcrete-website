@@ -1,0 +1,658 @@
+<!-- THIS IS THE MAIN PAGE CREATED BY DIEGO GALVIS, WHO IS A JUNIOR DEVELOPER AND IN 2026 IS GONNA BE GRADUATED BY SAIT-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FORCONCRETE LTD</title>
+  <link rel="icon" href="images/logob.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- PAGE LOADER (LOGO PULSANTE) -->
+  <div id="page-loader">
+    <img src="images/logob.png" class="loader-logo" alt="Loading...">
+  </div>
+  <header>
+    <a href="#" class="logo">
+      <img src="images/logob.png" alt="FORCONCRETE LTD logo">
+    </a>
+    <nav>
+      <ul class="flex">
+        <a href="index.html" id="nav-home" data-i18n="navHome">HOME</a>
+        <a href="about.html" id="nav-about" data-i18n="navAbout">ABOUT US</a>
+        <a href="contact.html" id="nav-contact" data-i18n="navContact">CONTACT US</a>
+        <a href="services.html" id="nav-services" data-i18n="navServices">SERVICES</a>
+
+        <div class="language-dropdown">
+          <select id="lang-select">
+            <option value="en" selected>EN</option>
+            <option value="fr">FR</option>
+            <option value="es">ES</option>
+            <option value="pt">PORT</option>
+          </select>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main id="hero-section">
+    <div class="hero-left">
+      <video autoplay muted loop>
+        <source src="videos/inicio.mp4" type="video/mp4">
+      </video>
+      <div class="capa"></div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-text">
+        <h5 class="hero-subtitle" data-i18n="heroSubtitle">EXPERTS IN CONCRETE CRAFTSMANSHIP</h5>
+
+        <h2 data-i18n="heroTitle">BUILDING STRONG FOUNDATIONS</h2>
+
+        <p data-i18n="heroText">
+          At ForConcrete LTD, we specialize in providing durable, high-performance
+          concrete solutions for both residential and commercial projects across
+          Calgary and surrounding areas. With a commitment to quality, precision,
+          and innovation, our team ensures every pour meets the highest standards —
+          creating structures that are not only strong but built to last. From
+          custom mixes to full-scale construction support, we deliver reliability
+          from the ground up.
+        </p>
+
+        <a href="#services" class="btn-hero" data-i18n="heroButton">Our Services</a>
+
+      </div>
+    </div>
+  </main>
+  <!--------------------------------------      WHY FOR CONCRETE SECTION     ---------------------------------------------------->
+  <section class="why-strong-section">
+    <div class="why-strong-container">
+
+      <!-- LEFT TEXT -->
+      <div class="why-strong-text">
+        <h2 data-i18n="whyTitle">WHY FORCONCRETE</h2>
+        <p data-i18n="whyText">
+          At ForConcrete Ltd, we stand for reliability, durability, and precision.
+          Every project is executed with expert workmanship and strong attention to
+          detail — delivering concrete solutions built to perform and built to last.
+        </p>
+      </div>
+
+
+      <!-- RIGHT STATS -->
+      <div class="why-strong-stats">
+        <div class="strong-stat-box">
+          <h3 data-i18n="stat1">20+ YEARS</h3>
+          <p data-i18n="stat1desc">Experience you can trust</p>
+        </div>
+
+        <div class="strong-stat-box">
+          <h3 data-i18n="stat2">FULLY INSURED</h3>
+          <p data-i18n="stat2desc">Professional & safe operations</p>
+        </div>
+
+        <div class="strong-stat-box">
+          <h3 data-i18n="stat3">HIGH QUALITY</h3>
+          <p data-i18n="stat3desc">Premium materials & craftsmanship</p>
+        </div>
+
+        <div class="strong-stat-box">
+          <h3 data-i18n="stat4">RELIABLE TEAM</h3>
+          <p data-i18n="stat4desc">On time and detail-driven</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--------------------------------------      SERVICES SECTION     ---------------------------------------------------->
+
+  <section id="services" class="services-hero">
+    <div class="services-overlay"></div>
+
+    <div class="services-content">
+      <h2 data-i18n="servicesTitle">OUR SERVICES</h2>
+
+      <p class="services-intro" data-i18n="servicesIntro">
+        At ForConcrete LTD, we provide reliable and high-quality concrete and construction
+        solutions for residential and commercial projects across Calgary and surrounding
+        areas. Our team is committed to delivering precision, durability, and clean execution
+        in every job — whether it's new construction, restoration, or custom project support.
+      </p>
+
+      <div class="services-columns">
+        <ul>
+          <li>Landscaping</li>
+          <li>Gardening</li>
+          <li>Grade Beam Footing</li>
+          <li>Snow Removal</li>
+          <li>Sewer Repair</li>
+        </ul>
+
+        <ul>
+          <li>Demolition</li>
+          <li>Carpentry</li>
+          <li>Labour</li>
+          <li>Dry Finish</li>
+          <li>Wet Finish</li>
+        </ul>
+
+        <ul>
+          <li>Sidewalks</li>
+          <li>Driveways</li>
+          <li>Patios</li>
+          <li>Retaining Walls</li>
+          <li>Remodeling Concrete</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------------      RECENT PROJECT SECTION     ---------------------------------------------------->
+  <section class="fc-section fc-projects">
+    <h2 class="fc-title" data-i18n="projectsTitle">RECENT PROJECTS</h2>
+    <p class="fc-subtitle" data-i18n="projectsSubtitle">
+      A look at some of the concrete and construction work completed by ForConcrete LTD.
+    </p>
+
+    <div class="projects-grid-minimal">
+      <figure class="project-item">
+        <img src="images/sidewalk.jpeg" alt="Concrete driveway in Calgary">
+        <figcaption>
+          <h3>Sidewalks</h3>
+          <p>Calgary, AB</p>
+        </figcaption>
+      </figure>
+
+      <figure class="project-item">
+        <img src="images/backyard.jpeg" alt="Concrete patio in Airdrie">
+        <figcaption>
+          <h3>Backyard Patio</h3>
+          <p>Airdrie, AB</p>
+        </figcaption>
+      </figure>
+
+      <figure class="project-item">
+        <img src="images/bridge.jpeg" alt="Commercial concrete slab downtown">
+        <figcaption>
+          <h3>Remodeling Concrete</h3>
+          <p>Jasper, AB</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <!--------------------------------------      TESTIMONIALS SECTION     ---------------------------------------------------->
+  <section class="fc-testimonials-hero">
+    <div class="fc-testimonials-overlay"></div>
+
+    <div class="fc-testimonials-container">
+      <h2 class="fc-title" data-i18n="testimonialsTitle">WHAT OUR CLIENTS SAY</h2>
+
+      <div class="fc-testimonials-grid">
+
+        <!-- TESTIMONIO 1 -->
+        <div class="fc-testimonial-card">
+          <div class="avatar">M</div>
+          <h4>Mark T.</h4>
+          <span>Calgary, AB</span>
+          <p>“ForConcrete did an amazing job on our driveway and sidewalk. Very professional and extremely clean work.”
+          </p>
+        </div>
+
+        <!-- TESTIMONIO 2 -->
+        <div class="fc-testimonial-card">
+          <div class="avatar">S</div>
+          <h4>Sarah M.</h4>
+          <span>Airdrie, AB</span>
+          <p>“Great communication from start to finish. The patio turned out exactly how we imagined.”</p>
+        </div>
+
+        <!-- TESTIMONIO 3 -->
+        <div class="fc-testimonial-card">
+          <div class="avatar">D</div>
+          <h4>Daniel R.</h4>
+          <span>Okotoks, AB</span>
+          <p>“Reliable team, fair pricing, and solid quality. Highly recommended!”</p>
+        </div>
+
+        <!-- TESTIMONIO 4 -->
+        <div class="fc-testimonial-card">
+          <div class="avatar">J</div>
+          <h4>Jessica L.</h4>
+          <span>Chestermere, AB</span>
+          <p>“They completed our driveway extension ahead of schedule. Excellent workmanship.”</p>
+        </div>
+
+        <!-- TESTIMONIO 5 -->
+        <div class="fc-testimonial-card">
+          <div class="avatar">R</div>
+          <h4>Robert G.</h4>
+          <span>Cochrane, AB</span>
+          <p>“Very happy with the retaining wall they built. Strong, clean, and affordable.”</p>
+        </div>
+
+        <!-- TESTIMONIO 6 -->
+        <div class="fc-testimonial-card">
+          <div class="avatar">A</div>
+          <h4>Amanda P.</h4>
+          <span>Calgary, AB</span>
+          <p>“The crew was on time every day and extremely respectful. Great concrete finish!”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------      SERVICE AREA SECTION     ---------------------------------------------------->
+  <section class="fc-section fc-areas">
+    <div class="areas-map">
+      <img src="images/areas.png" alt="Service areas around Calgary">
+    </div>
+
+    <div class="areas-text">
+      <h2 class="fc-title" data-i18n="areasTitle">SERVICE AREAS</h2>
+      <p data-i18n="areasText">
+        ForConcrete LTD proudly serves Calgary and surrounding communities with
+        dependable, high-quality concrete and construction services.
+      </p>
+
+      <ul class="areas-list">
+        <li>Calgary, AB</li>
+        <li>Airdrie</li>
+        <li>Cochrane</li>
+        <li>Chestermere</li>
+        <li>Okotoks</li>
+        <li>Surrounding rural areas</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ===== HOW WE WORK + CTA (UNIFICADO EN UNA SOLA SECCIÓN) ===== -->
+  <section class="work-combined-section">
+
+    <!-- Overlay -->
+    <div class="work-overlay"></div>
+
+    <div class="work-inner">
+
+      <!-- Title -->
+      <h2 class="fc-title white-title" data-i18n="howTitle">HOW WE WORK</h2>
+
+      <!-- Process Cards -->
+      <div class="work-grid">
+        <div class="work-step">
+          <div class="step-number">1</div>
+          <h3 data-i18n="step1">Consultation</h3>
+          <p data-i18n="step1desc">We review your project needs, site conditions, and expectations.</p>
+        </div>
+
+        <div class="work-step">
+          <div class="step-number">2</div>
+          <h3 data-i18n="step2">Estimate & Planning</h3>
+          <p data-i18n="step2desc">Clear pricing, scheduling, and scope so you know what to expect.</p>
+        </div>
+
+        <div class="work-step">
+          <div class="step-number">3</div>
+          <h3 data-i18n="step3">Construction</h3>
+          <p data-i18n="step3desc">Our crew completes the work safely, efficiently, and professionally.</p>
+        </div>
+
+        <div class="work-step">
+          <div class="step-number">4</div>
+          <h3 data-i18n="step4">Final Walkthrough</h3>
+          <p data-i18n="step4desc">We review the finished work with you and ensure everything is right.</p>
+        </div>
+      </div>
+
+      <!-- CTA BELOW -->
+      <div class="work-cta">
+        <h3 data-i18n="ctaTitle">READY TO START YOUR PROJECT?</h3>
+        <p data-i18n="ctaText">Contact ForConcrete LTD today for a free, no-obligation quote on your next concrete or
+          construction project.</p>
+
+        <a href="#contact" class="cta-button" data-i18n="ctaButton">Request a Free Quote</a>
+        <p class="cta-phone"><span data-i18n="ctaPhone">Or call:</span> (805) 343-7802</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER FORCONCRETE ===== -->
+  <footer class="fc-footer">
+    <div class="fc-footer-container">
+
+      <!-- Logo + Contacto -->
+      <div class="fc-footer-col">
+        <img src="images/logob.png" class="fc-footer-logo" alt="FORCONCRETE LTD" />
+
+        <h4>FORCONCRETE LTD</h4>
+
+        <p class="fc-footer-contact">
+          <strong>(403) 561-0119</strong><br>
+          1095 SETON CIR SE<br>
+          T3M 2W2 <br>
+          CALGARY, AB
+        </p>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="fc-footer-col">
+        <h4 data-i18n="footerFollowUs">FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/forconcreteltd_ca?igsh=MXV3OWJoZW5zMG0xaA=="><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@forconcreteltd?si=0zbhoLB4CTnL5Bbe"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@forconcreteltd?_r=1&_t=ZS-91jwzvvzdVX"><i
+              class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/share/17ZEmsatjT/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://x.com/forconcreteltd?s=21"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Galería -->
+      <div class="fc-footer-col">
+        <h4 data-i18n="footerPhotos">PHOTOS</h4>
+        <div class="fc-footer-gallery">
+          <img src="images/galeria1.jpeg">
+          <img src="images/galeria2.jpeg">
+          <img src="images/galeria3.jpeg">
+          <img src="images/galeria4.jpeg">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fc-footer-bottom" data-i18n="footerRights">
+      © 2025 FORCONCRETE LTD. All rights reserved.
+    </div>
+  </footer>
+
+  <button id="backToTop" class="svg-btn">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+      <path stroke="white" stroke-width="3" d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+  <script>
+    const btn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        btn.style.display = "flex";
+      } else {
+        btn.style.display = "none";
+      }
+    });
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+  <script>
+    const translations = {
+      en: {
+        navHome: "HOME",
+        navAbout: "ABOUT US",
+        navContact: "CONTACT US",
+        navServices: "SERVICES",
+
+        heroSubtitle: "EXPERTS IN CONCRETE CRAFTSMANSHIP",
+        heroTitle: "BUILDING STRONG FOUNDATIONS",
+        heroText: "At ForConcrete LTD, we specialize in providing durable, high-performance concrete solutions for both residential and commercial projects across Calgary and surrounding areas. With a commitment to quality, precision, and innovation, our team ensures every pour meets the highest standards — creating structures that are not only strong but built to last.",
+        heroButton: "Our Services",
+
+        whyTitle: "WHY FORCONCRETE",
+        whyText: "At ForConcrete Ltd, we stand for reliability, durability, and precision. Every project is executed with expert workmanship and strong attention to detail — delivering concrete solutions built to perform and built to last.",
+        stat1: "20+ YEARS",
+        stat1desc: "Experience you can trust",
+        stat2: "FULLY INSURED",
+        stat2desc: "Professional & safe operations",
+        stat3: "HIGH QUALITY",
+        stat3desc: "Premium materials & craftsmanship",
+        stat4: "RELIABLE TEAM",
+        stat4desc: "On time and detail-driven",
+
+        servicesTitle: "OUR SERVICES",
+        servicesIntro: "At ForConcrete LTD, we provide reliable and high-quality concrete and construction solutions for residential and commercial projects.",
+
+        projectsTitle: "RECENT PROJECTS",
+        projectsSubtitle: "A look at some of the concrete and construction work completed by ForConcrete LTD.",
+
+        testimonialsTitle: "WHAT OUR CLIENTS SAY",
+
+        areasTitle: "SERVICE AREAS",
+        areasText: "ForConcrete LTD proudly serves Calgary and surrounding communities with dependable, high-quality service.",
+
+        howTitle: "HOW WE WORK",
+        step1: "Consultation",
+        step1desc: "We review your project needs, site conditions, and expectations.",
+        step2: "Estimate & Planning",
+        step2desc: "Clear pricing, scheduling, and scope so you know what to expect.",
+        step3: "Construction",
+        step3desc: "Our crew completes the work safely, efficiently, and professionally.",
+        step4: "Final Walkthrough",
+        step4desc: "We review the finished work with you and ensure everything is right.",
+
+        ctaTitle: "READY TO START YOUR PROJECT?",
+        ctaText: "Contact ForConcrete LTD today for a free, no-obligation quote.",
+        ctaButton: "REQUEST A FREE QUOTE",
+        ctaPhone: "Or call:",
+
+        footerFollowUs: "FOLLOW US",
+        footerPhotos: "PHOTOS",
+        footerRights: "© 2025 FORCONCRETE LTD. All rights reserved."
+      },
+
+      es: {
+        navHome: "INICIO",
+        navAbout: "NOSOTROS",
+        navContact: "CONTACTO",
+        navServices: "SERVICIOS",
+
+        heroSubtitle: "EXPERTOS EN TRABAJO DE CONCRETO",
+        heroTitle: "CONSTRUYENDO BASES SÓLIDAS",
+        heroText: "En ForConcrete LTD, nos especializamos en brindar soluciones de concreto duraderas y de alto rendimiento para proyectos residenciales y comerciales en Calgary y alrededores.",
+        heroButton: "Nuestros Servicios",
+
+        whyTitle: "POR QUÉ FORCONCRETE",
+        whyText: "En ForConcrete Ltd representamos confiabilidad, durabilidad y precisión. Cada proyecto se ejecuta con mano de obra experta y una fuerte atención al detalle.",
+        stat1: "20+ AÑOS",
+        stat1desc: "Experiencia en la que puedes confiar",
+        stat2: "TOTALMENTE ASEGURADOS",
+        stat2desc: "Operaciones seguras y profesionales",
+        stat3: "ALTA CALIDAD",
+        stat3desc: "Materiales premium y excelente mano de obra",
+        stat4: "EQUIPO CONFIABLE",
+        stat4desc: "Puntuales y detallistas",
+
+        servicesTitle: "NUESTROS SERVICIOS",
+        servicesIntro: "En ForConcrete LTD ofrecemos soluciones de concreto y construcción confiables y de alta calidad para proyectos residenciales y comerciales.",
+
+        projectsTitle: "PROYECTOS RECIENTES",
+        projectsSubtitle: "Una mirada a algunos de los trabajos realizados por ForConcrete LTD.",
+
+        testimonialsTitle: "LO QUE DICEN NUESTROS CLIENTES",
+
+        areasTitle: "ZONAS DE SERVICIO",
+        areasText: "ForConcrete LTD atiende Calgary y comunidades cercanas ofreciendo servicios de primera calidad.",
+
+        howTitle: "CÓMO TRABAJAMOS",
+        step1: "Consulta",
+        step1desc: "Revisamos tus necesidades, el sitio y tus expectativas.",
+        step2: "Estimación y Planificación",
+        step2desc: "Precios claros, cronograma y alcance definidos.",
+        step3: "Construcción",
+        step3desc: "Trabajo seguro, eficiente y profesional.",
+        step4: "Inspección Final",
+        step4desc: "Revisamos el trabajo contigo para asegurar que esté perfecto.",
+
+        ctaTitle: "¿LISTO PARA EMPEZAR TU PROYECTO?",
+        ctaText: "Contáctanos hoy para una cotización gratuita y sin compromiso.",
+        ctaButton: "SOLICITAR COTIZACIÓN",
+        ctaPhone: "O llámanos:",
+
+        footerFollowUs: "SÍGUENOS",
+        footerPhotos: "FOTOS",
+        footerRights: "© 2025 FORCONCRETE LTD. Todos los derechos reservados."
+      },
+
+      fr: {
+        navHome: "ACCUEIL",
+        navAbout: "À PROPOS",
+        navContact: "CONTACT",
+        navServices: "SERVICES",
+
+        heroSubtitle: "EXPERTS EN BÉTON",
+        heroTitle: "CONSTRUIRE DES BASES SOLIDES",
+        heroText: "Chez ForConcrete LTD, nous offrons des solutions de béton durables et performantes pour les projets résidentiels et commerciaux à Calgary et dans les environs.",
+        heroButton: "Nos Services",
+
+        whyTitle: "POURQUOI FORCONCRETE",
+        whyText: "ForConcrete Ltd représente la fiabilité, la durabilité et la précision.",
+
+        stat1: "20+ ANS",
+        stat1desc: "Une expérience de confiance",
+        stat2: "ASSURÉ",
+        stat2desc: "Opérations sûres et professionnelles",
+        stat3: "HAUTE QUALITÉ",
+        stat3desc: "Matériaux et savoir-faire premium",
+        stat4: "ÉQUIPE FIABLE",
+        stat4desc: "Ponctuelle et minutieuse",
+
+        servicesTitle: "NOS SERVICES",
+        servicesIntro: "Nous offrons des solutions de béton et de construction de grande qualité.",
+
+        projectsTitle: "PROJETS RÉCENTS",
+        projectsSubtitle: "Un aperçu de nos réalisations pour Calgary et ses environs.",
+
+        testimonialsTitle: "CE QUE DISENT NOS CLIENTS",
+
+        areasTitle: "ZONES D’INTERVENTION",
+        areasText: "Nous servons Calgary et ses communautés voisines.",
+
+        howTitle: "COMMENT NOUS TRAVAILLONS",
+        step1: "Consultation",
+        step1desc: "Analyse des besoins et du site.",
+        step2: "Estimation & Planification",
+        step2desc: "Prix clairs et calendrier défini.",
+        step3: "Construction",
+        step3desc: "Travail sécuritaire et professionnel.",
+        step4: "Inspection Finale",
+        step4desc: "Validation du projet terminé.",
+
+        ctaTitle: "PRÊT À COMMENCER VOTRE PROJET ?",
+        ctaText: "Contactez-nous pour un devis gratuit.",
+        ctaButton: "DEMANDER UN DEVIS",
+        ctaPhone: "Ou appelez :",
+
+        footerFollowUs: "SUIVEZ-NOUS",
+        footerPhotos: "PHOTOS",
+        footerRights: "© 2025 FORCONCRETE LTD. Tous droits réservés."
+      },
+
+      pt: {
+        navHome: "INÍCIO",
+        navAbout: "SOBRE NÓS",
+        navContact: "CONTATO",
+        navServices: "SERVIÇOS",
+
+        heroSubtitle: "ESPECIALISTAS EM CONCRETO",
+        heroTitle: "CONSTRUINDO BASES SÓLIDAS",
+        heroText: "Na ForConcrete LTD, oferecemos soluções de concreto duráveis e de alto desempenho para projetos residenciais e comerciais em Calgary e região.",
+        heroButton: "Nossos Serviços",
+
+        whyTitle: "POR QUE FORCONCRETE",
+        whyText: "ForConcrete Ltd representa confiança, durabilidade e precisão.",
+
+        stat1: "20+ ANOS",
+        stat1desc: "Experiência que você pode confiar",
+        stat2: "TOTALMENTE SEGURADOS",
+        stat2desc: "Operações seguras e profissionais",
+        stat3: "ALTA QUALIDADE",
+        stat3desc: "Materiais premium e excelente acabamento",
+        stat4: "EQUIPE CONFIÁVEL",
+        stat4desc: "Pontual e detalhista",
+
+        servicesTitle: "NOSSOS SERVIÇOS",
+        servicesIntro: "Oferecemos soluções de concreto e construção de alta qualidade para toda a região de Calgary.",
+
+        projectsTitle: "PROJETOS RECENTES",
+        projectsSubtitle: "Alguns dos trabalhos concluídos pela ForConcrete LTD.",
+
+        testimonialsTitle: "O QUE NOSSOS CLIENTES DIZEM",
+
+        areasTitle: "ÁREAS DE ATENDIMENTO",
+        areasText: "Atendemos Calgary e cidades vizinhas com serviços de alta qualidade.",
+
+        howTitle: "COMO TRABALHAMOS",
+        step1: "Consulta",
+        step1desc: "Revisamos suas necessidades e o local.",
+        step2: "Estimativa & Planejamento",
+        step2desc: "Preços claros e cronograma definido.",
+        step3: "Construção",
+        step3desc: "Serviço seguro, eficiente e profissional.",
+        step4: "Revisão Final",
+        step4desc: "Garantimos que tudo está perfeito.",
+
+        ctaTitle: "PRONTO PARA COMEÇAR SEU PROJETO?",
+        ctaText: "Entre em contato para um orçamento gratuito.",
+        ctaButton: "SOLICITAR ORÇAMENTO",
+        ctaPhone: "Ou ligue:",
+
+        footerFollowUs: "SIGA-NOS",
+        footerPhotos: "FOTOS",
+        footerRights: "© 2025 FORCONCRETE LTD. Todos os direitos reservados."
+      }
+    };
+
+
+    // === APPLY TRANSLATION === //
+    const langSelect = document.getElementById("lang-select");
+
+    langSelect.addEventListener("change", () => {
+      updateLanguage(langSelect.value);
+    });
+
+    function updateLanguage(lang) {
+      const t = translations[lang];
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key]) el.textContent = t[key];
+      });
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loader = document.getElementById("page-loader");
+
+      // Mostrar loader cuando se hace clic en un link interno
+      document.querySelectorAll("a[href]").forEach(link => {
+        const url = link.getAttribute("href");
+
+        // Evitar que active en enlaces vacíos o #
+        if (!url || url.startsWith("#")) return;
+
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          loader.classList.add("active");
+
+          setTimeout(() => {
+            window.location.href = url;
+          }, 500); // tiempo del loader
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loader = document.getElementById("page-loader");
+      setTimeout(() => loader.classList.add("hide"), 400);
+    });
+  </script>
+</body>
+</html>

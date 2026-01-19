@@ -1,0 +1,299 @@
+<!-- THIS IS THE CONTACT PAGE CREATED BY DIEGO GALVIS, WHO IS A JUNIOR DEVELOPER AND IN 2026 IS GONNA BE GRADUATED BY SAIT-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORCONCRETE LTD</title>
+    <link rel="icon" href="images/logob.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <!-- PAGE LOADER (LOGO PULSANTE) -->
+    <div id="page-loader">
+        <img src="images/logob.png" class="loader-logo" alt="Loading...">
+    </div>
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logob.png" alt="FORCONCRETE LTD logo">
+        </a>
+        <nav>
+            <ul class="flex">
+                <a href="index.html" id="nav-home" data-i18n="navHome">HOME</a>
+                <a href="about.html" id="nav-about" data-i18n="navAbout">ABOUT US</a>
+                <a href="contact.html" id="nav-contact" data-i18n="navContact">CONTACT US</a>
+                <a href="services.html" id="nav-services" data-i18n="navServices">SERVICES</a>
+                <div class="language-dropdown">
+                    <select id="lang-select">
+                        <option value="en" selected>EN</option>
+                        <option value="fr">FR</option>
+                        <option value="es">ES</option>
+                        <option value="pt">PORT</option>
+                    </select>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!---------------------------------------------------------- SECTION 1 - HERO CONTACT -------------------------------------->
+    <main id="hero-section">
+        <section class="contact-hero">
+            <div class="contact-hero-overlay"></div>
+            <h1 class="contact-hero-title" data-i18n="contactHero">CONTACT US</h1>
+        </section>
+        <!--------------------------------------------------------------- CONTACT INFORMATION ---------------------------------------->
+        <section class="contact-info">
+            <div class="ci-box">
+                <i class="ci-icon fa-solid fa-phone"></i>
+                <p class="ci-text">+1 (825) 343-7802</p>
+            </div>
+            <div class="ci-box">
+                <i class="ci-icon fa-solid fa-location-dot"></i>
+                <p class="ci-text">1095 SETON CIR SE,<br> T3M 2W2 CALGARY, AB</p>
+            </div>
+            <div class="ci-box">
+                <i class="ci-icon fa-regular fa-comments"></i>
+                <p class="ci-text">FORCONCRETE2021@OUTLOOK.COM</p>
+            </div>
+        </section>
+        <!--------------------------------------------------------------- GET IN TOUCH INFORMATION ---------------------------------------->
+        <section class="contact-wrapper">
+            <!-- CONTACT FORM -->
+            <div class="contact-form">
+                <h2 data-i18n="getInTouch">GET IN TOUCH</h2>
+                <form id="fc-form">
+                    <label data-i18n="formName">Name</label>
+                    <input type="text" required placeholder="Your Name">
+
+                    <label data-i18n="formEmail">Email</label>
+                    <input type="email" required placeholder="Your Email">
+
+                    <label data-i18n="formPhone">Phone</label>
+                    <input type="text" required placeholder="Your Phone">
+
+                    <label data-i18n="formMessage">Message</label>
+                    <textarea required placeholder="Write your message here..."></textarea>
+                    <button type="submit" class="fc-submit" data-i18n="formSubmit">SUBMIT</button>
+                </form>
+            </div>
+            <!---------------------------------------------------------------- MAP --------------------------------------------------------------->
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps?q=1095%20Seton%20Cir%20SE,%20Calgary,%20AB&output=embed"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        <!----------------------------------------------------------- SUCCESS MESSAGE ------------------------------------>
+        <div id="success-msg" class="success-hidden" data-i18n="successMsg">
+            Su mensaje fue enviado con éxito a ForConcrete LTD
+        </div>
+    </main>
+    <!------------------------------------------------------ ===== FOOTER FORCONCRETE ===== ---------------------------------------->
+    <footer class="fc-footer">
+        <div class="fc-footer-container">
+            <!-- Logo + Contacto -->
+            <div class="fc-footer-col">
+                <img src="images/logob.png" class="fc-footer-logo" alt="FORCONCRETE LTD" />
+                <h4>FORCONCRETE LTD</h4>
+                <p class="fc-footer-contact">
+                    <strong>(403) 561-0119</strong><br>
+                    1095 SETON CIR SE<br>
+                    T3M 2W2 <br>
+                    CALGARY, AB
+                </p>
+            </div>
+            <!-- Follow Us -->
+            <div class="fc-footer-col">
+                <h4 data-i18n="footerFollowUs">FOLLOW US</h4>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/forconcreteltd_ca?igsh=MXV3OWJoZW5zMG0xaA=="><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/@forconcreteltd?si=0zbhoLB4CTnL5Bbe"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@forconcreteltd?_r=1&_t=ZS-91jwzvvzdVX"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/17ZEmsatjT/?mibextid=wwXIfr"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://x.com/forconcreteltd?s=21"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Galería -->
+            <div class="fc-footer-col">
+                <h4 data-i18n="footerPhotos">PHOTOS</h4>
+                <div class="fc-footer-gallery">
+                    <img src="images/galeria1.jpeg">
+                    <img src="images/galeria2.jpeg">
+                    <img src="images/galeria3.jpeg">
+                    <img src="images/galeria4.jpeg">
+                </div>
+            </div>
+        </div>
+
+        <div class="fc-footer-bottom" data-i18n="footerRights">
+            © 2025 FORCONCRETE LTD. All rights reserved.
+        </div>
+    </footer>
+    <!--------------------------------------------------------------- BUTTON BACK TO TOP -------------------------------------->
+    <button id="backToTop" class="svg-btn">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <path stroke="white" stroke-width="3" d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+    </button>
+    <script>
+        const btn = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                btn.style.display = "flex";
+            } else {
+                btn.style.display = "none";
+            }
+        });
+
+        btn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loader = document.getElementById("page-loader");
+            // Mostrar loader cuando se hace clic en un link interno
+            document.querySelectorAll("a[href]").forEach(link => {
+                const url = link.getAttribute("href");
+                // Evitar que active en enlaces vacíos o #
+                if (!url || url.startsWith("#")) return;
+
+                link.addEventListener("click", e => {
+                    e.preventDefault();
+                    loader.classList.add("active");
+
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 500); // tiempo del loader
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loader = document.getElementById("page-loader");
+            setTimeout(() => loader.classList.add("hide"), 400);
+        });
+    </script>
+    <script>
+        const translations = {
+            en: {
+                navHome: "HOME",
+                navAbout: "ABOUT US",
+                navContact: "CONTACT US",
+                navServices: "SERVICES",
+
+                contactHero: "CONTACT US",
+
+                getInTouch: "GET IN TOUCH",
+
+                formName: "Name",
+                formEmail: "Email",
+                formPhone: "Phone",
+                formMessage: "Message",
+                formSubmit: "SUBMIT",
+
+                successMsg: "Your message was successfully sent to ForConcrete LTD",
+
+                footerFollowUs: "FOLLOW US",
+                footerPhotos: "PHOTOS",
+                footerRights: "© 2025 FORCONCRETE LTD. All rights reserved."
+            },
+            es: {
+                navHome: "INICIO",
+                navAbout: "NOSOTROS",
+                navContact: "CONTACTO",
+                navServices: "SERVICIOS",
+
+                contactHero: "CONTÁCTANOS",
+
+                getInTouch: "PONTE EN CONTACTO",
+
+                formName: "Nombre",
+                formEmail: "Correo",
+                formPhone: "Teléfono",
+                formMessage: "Mensaje",
+                formSubmit: "ENVIAR",
+
+                successMsg: "Tu mensaje fue enviado con éxito a ForConcrete LTD",
+
+                footerFollowUs: "SÍGUENOS",
+                footerPhotos: "FOTOS",
+                footerRights: "© 2025 FORCONCRETE LTD. Todos los derechos reservados."
+            },
+            fr: {
+                // NAV
+                navHome: "ACCUEIL",
+                navAbout: "À PROPOS",
+                navContact: "CONTACT",
+                navServices: "SERVICES",
+
+                contactHero: "CONTACTEZ-NOUS",
+
+                getInTouch: "ENTREZ EN CONTACT",
+
+                formName: "Nom",
+                formEmail: "Email",
+                formPhone: "Téléphone",
+                formMessage: "Message",
+                formSubmit: "ENVOYER",
+
+                successMsg: "Votre message a été envoyé avec succès à ForConcrete LTD",
+
+                // FOOTER
+                footerFollowUs: "SUIVEZ-NOUS",
+                footerPhotos: "PHOTOS",
+                footerRights: "© 2025 FORCONCRETE LTD. Tous droits réservés."
+            },
+            pt: {
+                // NAV
+                navHome: "INÍCIO",
+                navAbout: "SOBRE NÓS",
+                navContact: "CONTATO",
+                navServices: "SERVIÇOS",
+
+                contactHero: "CONTATE-NOS",
+
+                getInTouch: "ENTRE EM CONTATO",
+
+                formName: "Nome",
+                formEmail: "Email",
+                formPhone: "Telefone",
+                formMessage: "Mensagem",
+                formSubmit: "ENVIAR",
+
+                successMsg: "Sua mensagem foi enviada com sucesso para a ForConcrete LTD",
+
+                // FOOTER
+                footerFollowUs: "SIGA-NOS",
+                footerPhotos: "FOTOS",
+                footerRights: "© 2025 FORCONCRETE LTD. Todos os direitos reservados."
+            }
+        };
+        // === APPLY TRANSLATION === //
+        const langSelect = document.getElementById("lang-select");
+
+        langSelect.addEventListener("change", () => {
+            updateLanguage(langSelect.value);
+        });
+
+        function updateLanguage(lang) {
+            const t = translations[lang];
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (t[key]) el.textContent = t[key];
+            });
+        }
+    </script>
+</body>
+</html>

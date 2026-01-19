@@ -1,0 +1,29 @@
+/* ===== PAGE LOADER – LOGO PULSANTE PREMIUM ===== */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background: #111827; /* tu color del header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .5s ease, visibility .5s ease;
+}
+
+#page-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-logo {
+    width: 130px;
+    animation: pulse 1.4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: .6; }
+    50% { transform: scale(1.22); opacity: 1; }
+    100% { transform: scale(1); opacity: .6; }
+}
