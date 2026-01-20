@@ -864,14 +864,14 @@ main {
   }
 
   header img {
-    margin-left: 70px !important;
+    margin-left: 50px !important;
     /* ⬅️ mueve el logo a la derecha */
-    width: 150px !important;
+    width: 130px !important;
     height: auto !important;
   }
 
   nav {
-    margin-left: 70px !important;
+    margin-left: 80px !important;
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
   }
