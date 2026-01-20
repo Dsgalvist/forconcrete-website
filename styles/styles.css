@@ -864,14 +864,14 @@ main {
   }
 
   header img {
-    margin-left: 100px !important;
+    margin-left: 70px !important;
     /* ⬅️ mueve el logo a la derecha */
     width: 150px !important;
     height: auto !important;
   }
 
   nav {
-    margin-left: 110px !important;
+    margin-left: 70px !important;
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
   }
@@ -886,8 +886,8 @@ main {
   }
 
   nav a {
-    font-size: 20px !important;
-    line-height: 1.2 !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
     margin-right: 0 !important;
 
     white-space: nowrap !important;
