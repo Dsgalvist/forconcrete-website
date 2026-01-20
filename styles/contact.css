@@ -8,20 +8,24 @@ body {
 
 .fixed-width {
     width: 600px;
-    margin: 0 auto; /* centers content on the screen */
+    margin: 0 auto;
+    /* centers content on the screen */
 }
 
 .hidden {
-    display: none; /* hides elements that are needed for DOM */
+    display: none;
+    /* hides elements that are needed for DOM */
 }
 
 .flex {
-    display: flex; 
+    display: flex;
 }
 
 /****************** typography ******************/
 
-h1, h2, a {
+h1,
+h2,
+a {
     font-family: 'Roboto Slab', serif;
 }
 
@@ -57,16 +61,18 @@ header a {
     color: white;
 }
 
-p, h2 {
+p,
+h2 {
     margin-bottom: 15px;
 }
 
 /****************** site-wide styling ******************/
 /*** INSERT YOUR WORK BELOW: ***/
 
-header, footer {
+header,
+footer {
     background-color: #111827;
-    box-shadow: 0 2px 8px rgba (0,0,0,0.3);
+    box-shadow: 0 2px 8px rgba (0, 0, 0, 0.3);
 }
 
 header {
@@ -84,7 +90,8 @@ header {
     padding: 10px;
     margin-bottom: 0;
 
-    gap: 400px; /* si usas esto en desktop */
+    gap: 400px;
+    /* si usas esto en desktop */
 }
 
 header img {
@@ -95,108 +102,113 @@ header img {
 nav a {
     margin-right: 30px;
     font-size: 25px;
-  
+
 }
 
-main{
-  margin-top: 150px;
+main {
+    margin-top: 150px;
 }
+
 /* ===== FOOTER REDISEÑADO PREMIUM ===== */
 .fc-footer {
-  background: #111827;
-  padding: 60px 10% 30px;
-  color: #e5e7eb;
+    background: #111827;
+    padding: 60px 10% 30px;
+    color: #e5e7eb;
 }
 
 .fc-footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 50px;
-  max-width: 1400px;
-  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .fc-footer-col {
-  flex: 1;
-  min-width: 260px;
+    flex: 1;
+    min-width: 260px;
 }
 
 .fc-footer-logo {
-  width: 110px;
-  margin-bottom: 12px;
+    width: 110px;
+    margin-bottom: 12px;
 }
 
 .fc-footer-col h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #ffffff;
-  letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .fc-footer-contact {
-  font-size: 15px;
-  line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 /* Social icons */
 
-.fc-footer-col{
-  display: flex;
+.fc-footer-col {
+    display: flex;
     flex-direction: column;
-    align-items: center;   /* Centra título + iconos */
+    align-items: center;
+    /* Centra título + iconos */
     justify-content: center;
     text-align: center;
 }
 
 .footer-social {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  gap: 18px;
-  justify-items: center;
-  margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas */
+    gap: 18px;
+    justify-items: center;
+    margin-top: 25px;
 }
 
 .footer-social a i {
-  font-size: 36px;  
-  color: white;
-  transition: 0.25s ease;
+    font-size: 36px;
+    color: white;
+    transition: 0.25s ease;
 }
 
 .footer-social a i:hover {
-  transform: scale(1.25);
-  color: #e63946; /* rojo cemento como tu marca */
+    transform: scale(1.25);
+    color: #e63946;
+    /* rojo cemento como tu marca */
 }
 
 /* Gallery */
 .fc-footer-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 75px);
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 75px);
+    gap: 10px;
 }
 
 .fc-footer-gallery img {
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
-  border-radius: 6px;
-  transition: 0.3s ease;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: 0.3s ease;
 }
 
 .fc-footer-gallery img:hover {
-  transform: scale(1.08);
+    transform: scale(1.08);
 }
 
 /* Bottom text */
 .fc-footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #111827;
-  font-size: 14px;
-  color: #9ca3af;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #111827;
+    font-size: 14px;
+    color: #9ca3af;
 }
+
 /* === BOTÓN SVG ELEGANTE === */
 .svg-btn {
     position: fixed;
@@ -212,7 +224,7 @@ main{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
     transition: all .3s ease;
     z-index: 9999;
 }
@@ -221,12 +233,14 @@ main{
     transform: translateY(-5px);
     background: #133b74;
 }
+
 /************************************************* ===== CONTACT SECTION ===== *****************************************/
 .contact-hero {
     position: relative;
     width: 100%;
     height: 80vh;
-    background-image: url('../images/contactus.jpg'); /* <-- aquí tu imagen */
+    background-image: url('../images/contactus.jpg');
+    /* <-- aquí tu imagen */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -237,7 +251,7 @@ main{
 .contact-hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .contact-hero-title {
@@ -263,8 +277,10 @@ main{
 }
 
 .ci-box {
-    width: 400px;               /* MÁS ANCHO */
-    height: 250px;              /* MÁS ALTO */
+    width: 400px;
+    /* MÁS ANCHO */
+    height: 250px;
+    /* MÁS ALTO */
     border: 3px solid #111827;
     border-radius: 12px;
     display: flex;
@@ -274,21 +290,23 @@ main{
     gap: 18px;
     transition: 0.3s ease;
     background: white;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .ci-box:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
 .ci-icon {
-    font-size: 60px;            /* ÍCONO MÁS GRANDE */
+    font-size: 60px;
+    /* ÍCONO MÁS GRANDE */
     color: #111827;
 }
 
 .ci-text {
-    font-size: 20px;            /* TEXTO MÁS GRANDE */
+    font-size: 20px;
+    /* TEXTO MÁS GRANDE */
     font-weight: 700;
     text-align: center;
     line-height: 1.4;
@@ -300,6 +318,7 @@ main{
         width: 85%;
     }
 }
+
 /*****************************************************************************/
 /* CONTAINER */
 .contact-wrapper {
@@ -315,7 +334,7 @@ main{
     background: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
 }
 
@@ -369,36 +388,83 @@ main{
     min-height: 450px;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* ==== APPLE STYLE SUCCESS MESSAGE ==== */
 #success-msg {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #ffffff;
-  padding: 18px 30px;
-  border-radius: 14px;
-  font-size: 17px;
-  font-weight: 600;
-  opacity: 0;
-  transform: translateY(20px);
-  pointer-events: none;
-  transition: all 0.35s ease;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  z-index: 99999;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #ffffff;
+    padding: 18px 30px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    z-index: 99999;
 }
 
 .success-visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .success-hidden {
-  opacity: 0;
-  transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* ===== HEADER MOBILE – FIX DEFINITIVO ===== */
+@media (max-width: 1100px) {
+
+    header {
+        padding: 24px 24px !important;
+        min-height: 130px !important;
+        gap: 0 !important;
+
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+
+    header img {
+        margin-left: 50px !important;
+        /* ⬅️ mueve el logo a la derecha */
+        width: 130px !important;
+        height: auto !important;
+    }
+
+    nav {
+        margin-left: 80px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav ul.flex {
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+
+        gap: 28px !important;
+        white-space: nowrap !important;
+    }
+
+    nav a {
+        font-size: 24px !important;
+        line-height: 1 !important;
+        margin-right: 0 !important;
+
+        white-space: nowrap !important;
+    }
+
+    main {
+        margin-top: 150px !important;
+    }
 }
