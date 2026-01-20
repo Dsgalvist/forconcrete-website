@@ -848,33 +848,3 @@ main {
     grid-template-columns: 1fr;
   }
 }
-
-/* ================= MOBILE HEADER FIX ONLY ================= */
-@media (max-width: 768px) {
-
-  header {
-    padding: 6px 10px;
-    gap: 0;
-    justify-content: space-between;
-  }
-
-  header img {
-    width: 70px;
-    height: auto;
-  }
-
-  nav ul.flex {
-    gap: 12px;
-    align-items: center;
-  }
-
-  nav a {
-    font-size: 14px;
-    margin-right: 10px;
-  }
-
-  main {
-    margin-top: 90px;
-    /* compensates fixed header ONLY on mobile */
-  }
-}
